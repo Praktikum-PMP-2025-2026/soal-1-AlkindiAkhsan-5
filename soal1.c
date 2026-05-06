@@ -37,12 +37,12 @@ node* inputpasien(){
       struct node* temp = head;
       while(temp->next != NULL){
          temp = temp->next;
+         temp->sumd = temp->sumd + temp->d;
       }
       temp->next = newnode;
-      sumd = sumd+newnode->d;
    }
-
    return newnode;
+   
 }
 
 void printList(struct node* head) {
