@@ -16,6 +16,7 @@ typedef struct node{
    char* id;
    int d;
    struct node* next;
+   int sumd;
 }node;
 struct node* head = NULL;
 
@@ -50,6 +51,10 @@ void printList(struct node* head) {
       head = head->next;
    }
 } //[1]
+
+void printsumd(struct node* head){
+   printf("%d", head->sumd);
+}
 
 
   
