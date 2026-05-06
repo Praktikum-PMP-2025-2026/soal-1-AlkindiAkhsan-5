@@ -52,8 +52,9 @@ void printList(struct node* head) {
    }
 } //[1]
 
-void printsumd(struct node* head){
-   printf("%d", head->sumd);
+void printsumd(){
+   struct node* sumd;
+   printf("%d", sumd);
 }
 
 
@@ -68,7 +69,7 @@ int main(void) {
    printList(head);
    printf("\n");
    printf("WAIT: ");
-   printf("%d", head->sumd);
+   printsumd();
    return 0;
 
 }
